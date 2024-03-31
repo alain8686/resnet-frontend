@@ -9,7 +9,7 @@ const nextConfig = {
         config.resolve.extensions.push(".ts", ".tsx");
         config.resolve.fallback = { fs: false };
     
-        config.plugins.push(
+        config.plugins.push( 
         new NodePolyfillPlugin(), 
         new CopyPlugin({
           patterns: [
