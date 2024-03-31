@@ -82,10 +82,10 @@ const Picture: React.FC = () => {
       const base64PictureData = result.value;
       setCanvasRef(`data:image/png;base64,${base64PictureData}`);
 
-      //const bufferData = Buffer.from(base64PictureData, 'base64');
-      const response1 = await fetch('val_144.JPEG');
+      const bufferData = Buffer.from(base64PictureData, 'base64');
+      /*const response1 = await fetch('val_144.JPEG');
       const blob = await response1.blob();
-      const bufferData = Buffer.from(await blob.arrayBuffer());
+      const bufferData = Buffer.from(await blob.arrayBuffer());*/
 
       const rawImageData: jpeg.UintArrRet = jpeg.decode(new Uint8Array(bufferData), { useTArray: true });
       
