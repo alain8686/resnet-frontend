@@ -19,10 +19,6 @@ const nextConfig = {
               from: './node_modules/onnxruntime-web/dist/ort-wasm-simd.wasm',
               to: '_next/static/chunks',
             },          
-              {
-                from: './model',
-                to: 'static/chunks/pages',
-              },
             ],
           }),
         );
