@@ -132,7 +132,7 @@ const Picture: React.FC = () => {
 
   useEffect(() => {
     handleInitCameraButtonClick();
-    const timer = setInterval(handleTakePictureButtonClick, 10000);
+    const timer = setInterval(handleTakePictureButtonClick, 500);
     return () => {
       clearInterval(timer);
     };
