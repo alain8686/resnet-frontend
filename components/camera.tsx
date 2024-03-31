@@ -93,7 +93,7 @@ const Picture: React.FC = () => {
       //formData.append('image', blobData, 'image.jpg');
 
       handlerModel(rawImageData).then((response) => {
-        if(response && response.classe > -1){
+        if(response && response.classe == 5){
           setIsHuman(true);
           const [xMin_, yMin_, xMax_, yMax_] = response.boxCoordinate;
 
@@ -112,7 +112,7 @@ const Picture: React.FC = () => {
           fetch(url, {method: 'PUT', body: formData, headers: {}}).then(_ => console.log('Imagem enviado')).catch(e => {
             console.log(e);
           });
-          save(blobData, 'imagen.jpeg');
+          //save(blobData, 'imagen.jpeg');
         }
         else if(response){
           setIsHuman(true);
