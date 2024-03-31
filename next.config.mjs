@@ -4,6 +4,7 @@ import CopyPlugin from 'copy-webpack-plugin';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
+    output: 'export',
     webpack: (config, {  }) => {
         config.resolve.extensions.push(".ts", ".tsx");
         config.resolve.fallback = { fs: false };
