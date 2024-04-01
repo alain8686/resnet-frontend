@@ -73,7 +73,7 @@ const Picture: React.FC = () => {
 
   const handleTakePictureButtonClick = async () => {
     const cameraPreviewPictureOptions: CameraPreviewPictureOptions = {
-        quality: 85,
+        quality: 5,
         height: 64,
         width: 64
     };
@@ -93,7 +93,7 @@ const Picture: React.FC = () => {
       //formData.append('image', blobData, 'image.jpg');
 
       handlerModel(rawImageData).then((response) => {
-        if(response && response.classe == 5){
+        if(response && response.classe == 2){
           setIsHuman(true);
           const [xMin_, yMin_, xMax_, yMax_] = response.boxCoordinate;
 
