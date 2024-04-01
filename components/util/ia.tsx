@@ -91,7 +91,7 @@ async function modelLoader(){
     return model;
   }
   //const modelPath = path.join(process.cwd(), '/model/model.onnx');
-  const url = 'https://pub-ea23fddf0d7b4e8a87ee073517e80c3d.r2.dev/resnet_modelo_1_classification_box.onnx'
+  const url = 'https://pub-ea23fddf0d7b4e8a87ee073517e80c3d.r2.dev/resnet_modelo_8_classification_box.onnx'
   /*const response = await fetch(url, {method: 'GET'});
   const arrayBuffer = await response.arrayBuffer();
   const buffer = Buffer.from(arrayBuffer);*/
