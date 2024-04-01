@@ -1,0 +1,30 @@
+{
+  "name": "resnet",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@capacitor-community/camera-preview": "^5.0.0",
+    "jpeg-js": "^0.4.4",
+    "next": "14.1.4",
+    "onnxruntime-web": "^1.17.1",
+    "process": "^0.11.10",
+    "react": "^18",
+    "react-dom": "^18",
+    "save-file": "^2.3.1",
+    "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "copy-webpack-plugin": "^9.0.1",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,1 @@
+This folder contains the built output assets for the worker "worker-rust" generated at 2024-03-31T14:59:51.190Z.
